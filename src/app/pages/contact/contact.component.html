@@ -1,0 +1,98 @@
+
+<h1>Contact me:</h1>
+
+<form 
+  [formGroup]="userForm" 
+  (ngSubmit)="onSubmit()" 
+  class="example-form">
+  
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Name: </mat-label>
+    <input 
+      matInput 
+      #name
+      type="text" 
+      formControlName="name" 
+      id="defaultContactFormName" 
+      class="form-control"
+      placeholder="Name">
+    <span *ngIf="formSubmitted && userForm.get('name').hasError('required')">
+        * Name is required
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('name').hasError('pattern')">
+        * Name requires small and capital letters
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('name').hasError('maxLength')">
+        * Name should contain maximum 10 letters
+    </span>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Subject: </mat-label>
+    <input 
+      matInput 
+      #subject
+      type="text" 
+      formControlName="subject" 
+      id="defaultContactFormSubject" 
+      class="form-control"
+      placeholder="Subject">
+    <span *ngIf="formSubmitted && userForm.get('subject').hasError('required')">
+        * Subject is required
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('subject').hasError('pattern')">
+        * Subject requires small and capital letters
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('subject').hasError('maxLength')">
+        * First Name should contain maximum 40 letters
+      </span>
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Email: </mat-label>
+    <input 
+      matInput 
+      #email
+      type="text" 
+      formControlName="email" 
+      id="defaultContactFormEmail" 
+      class="form-control"
+      placeholder="Email">
+    <span *ngIf="formSubmitted && userForm.get('email').hasError('required')">
+        * Email is required
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('email').hasError    ('pattern')">
+        * Email has to contain @ sign and domain
+    </span>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Message: </mat-label>
+    <textarea 
+      matInput 
+      #message
+      maxLength="300"
+      formControlName="message" 
+      id="defaultContactFormMessage" 
+      placeholder="Send some message...">
+    </textarea>
+    <mat-hint align="end">{{message.value.length}} / 300</mat-hint>
+    <span *ngIf="formSubmitted && userForm.get('message').hasError('required')">
+      * Message is required
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('message').hasError('minLength')">
+      * Message should contain at least 20 letters
+    </span>
+    <span *ngIf="formSubmitted && userForm.get('message').hasError('maxLength')">
+        * Message has to contain maximum 300 letters
+    </span>
+  </mat-form-field>
+
+  <button 
+    mat-raised-button 
+    color="primary" 
+    type="submit"
+    [disabled] = "userForm.invalid">
+  Send</button>
+
+</form>

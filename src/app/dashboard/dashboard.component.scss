@@ -1,0 +1,120 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+mat-grid-list mat-grid-tile {
+  background: cornflowerblue;
+}
+
+.grid-layout-custom{
+  width: 100vw;
+  height: 50vh;
+}
+
+// .clients-counter,
+// .establishments-counter,
+// .petrol-tankers-counter,
+// .petrol-tones-sold-counter,
+// .foreign-country-partners-counter{
+//   animation: counter 5s ease-in-out alternate;
+//   font: 800 40px system-ui;
+//   counter-reset: num var(--num);
+//   animation-fill-mode: forwards;
+// }
+
+// .clients-counter::before,
+// .establishments-counter::before,
+// .petrol-tankers-counter::before,
+// .petrol-tones-sold-counter::before,
+// .foreign-country-partners-counter::before{
+//   content: counter(num);
+// }
+
+// .clients-counter { --numCli:284; }
+// .establishments-counter  { --numEst:106; }
+// .petrol-tankers-counter { --numTank:12954; }
+// .petrol-tones-sold-counter { --numTones:453091; }
+// .foreign-country-partners-counter { --numCtr:23; }
+
+// @keyframes counterCli {
+//   from {
+//     --num: 0;
+//   }
+//   to{
+//     --num: --numCli;
+//   }
+// }
+
+//liczniki na stronę główną
+@property --num-cli {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+//zadowoleni klienci
+div.clients-counter {
+  animation: counter 4s alternate;
+  font: 800 40px system-ui;
+  counter-reset: num-cli 0 var(--num-cli);
+  padding: 2rem;
+  animation-fill-mode: forwards;
+}
+div.clients-counter::after {
+  content: counterCli(num-cli);
+}
+
+@keyframes counterCli {
+  from {
+    --num-cli: 0;
+  }
+  to {
+    --num-cli: 450;
+  }
+}
+
+//placówek w całym kraju
+
+@property --num-est {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+div.establishments-counter {
+  animation: counter 4s ease-in-out alternate;
+  font: 800 40px system-ui;
+  counter-reset: num-est var(--num-est);
+  padding: 2rem;
+  animation-fill-mode: forwards;
+}
+div.establishments-counter::after {
+  content: counterEst(num-est);
+}
+
+@keyframes counterEst {
+  from {
+    --numEst: 0;
+  }
+  to {
+    --numEst: 124;
+  }
+}

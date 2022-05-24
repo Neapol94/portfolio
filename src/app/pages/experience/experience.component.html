@@ -1,0 +1,104 @@
+<h1>My experience:</h1>
+
+<h2>Front-end</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="intermediate show">JavaScript</mat-chip>
+    <mat-chip class="couple-months show">Tailwind</mat-chip>
+    <mat-chip class="intermediate show">CSS 3</mat-chip>
+    <mat-chip class="intermediate show">jQuery</mat-chip>
+    <mat-chip class="beginner show">Angular Material</mat-chip>
+    <mat-chip class="couple-months show">Typescript</mat-chip>
+    <mat-chip class="intermediate show">HTML 5</mat-chip>
+    <mat-chip class="beginner show">Angular 12</mat-chip>
+    <mat-chip class="couple-months show">React</mat-chip>
+    <mat-chip class="couple-months show">ES6</mat-chip>
+    <mat-chip class="intermediate show">Bootstrap 3</mat-chip>
+    <mat-chip class="couple-months show">Sass/Scss</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Back-end</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="intermediate show">PHP</mat-chip>
+    <mat-chip class="beginner show">NodeJs</mat-chip>
+    <mat-chip class="beginner show">ExpressJS</mat-chip>
+    <mat-chip class="intermediate show">Npm</mat-chip>
+    <mat-chip class="complete-beginner show">C# .NET</mat-chip>
+    <mat-chip class="intermediate show">Python</mat-chip>
+    <mat-chip class="couple-months show">Django</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Version control system</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="intermediate show">GIT</mat-chip>
+    <mat-chip class="complete-beginner show">Bitbucket</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Query/Non-query languages</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="intermediate show">MySQL</mat-chip>
+    <mat-chip class="couple-months show">SQL Server</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Graphics</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="couple-months show">Gimp</mat-chip>
+    <mat-chip class="intermediate show">Affinity designer</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Environments</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="couple-months show">Visual Studio</mat-chip>
+    <mat-chip class="intermediate show">Visual Studio Code</mat-chip>
+    <mat-chip class="intermediate show">FileZilla</mat-chip>
+    <mat-chip class="intermediate show">HeidiSQL</mat-chip>
+    <mat-chip class="intermediate show">Putty</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Operating systems</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="regular show">Windows</mat-chip>
+    <mat-chip class="intermediate show">Linux</mat-chip>
+    <mat-chip class="couple-months show">Issabel(Linux)</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Administration</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="intermediate show">Proxmox</mat-chip>
+    <mat-chip class="intermediate show">Winbox</mat-chip>
+    <mat-chip class="intermediate show">LibreNMS</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Hardware</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="intermediate show">PC/Laptop/Server repair</mat-chip>
+</mat-chip-list>
+<hr>
+<h2>Languages</h2>
+<mat-chip-list aria-label="front-end-web">
+    <mat-chip class="regular show">English</mat-chip>
+    <mat-chip class="couple-months show">Deutsch</mat-chip>
+    <mat-chip class="couple-months show">日本語</mat-chip>
+    <mat-chip class="beginner show">Italiano</mat-chip>
+</mat-chip-list>
+<hr>
+<mat-chip-list multiple class="legend-nav" aria-label="Legend">
+    <h3 >Legend:</h3>
+    <mat-chip 
+        data-level="complete-beginner" 
+        (click)="toggleClasses($event)" class="complete-beginner-legend">Complete beginner</mat-chip>
+    <mat-chip 
+        data-level="beginner" 
+        (click)="toggleClasses($event)"
+        class="beginner-legend">Beginner</mat-chip>
+    <mat-chip 
+        data-level="couple-months" 
+        (click)="toggleClasses($event)"
+        class="couple-months-legend">Couple months</mat-chip>
+    <mat-chip 
+        data-level="intermediate" 
+        (click)="toggleClasses($event)" class="intermediate-legend">Intermediate</mat-chip>
+    <mat-chip 
+        data-level="regular" 
+        (click)="toggleClasses($event)"
+        class="regular-legend">Regular</mat-chip>
+</mat-chip-list>

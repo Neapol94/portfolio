@@ -1,0 +1,7 @@
+<h2>My characteristics:</h2>
+
+<mat-chip-list 
+    aria-label="front-end-web">
+    <mat-chip *ngFor="let element of characteristicsList" [style.background]="getRandomColor()">{{element}}</mat-chip>
+
+</mat-chip-list>

@@ -1,0 +1,20 @@
+span.hobby-title {
+    position: absolute;
+    color: #fff;
+    filter: brightness(80%);
+    font-size: 30px;
+    cursor: default;
+    transition: all .5s linear;
+}
+
+img.hobby-image {
+    filter: brightness(50%);
+    transition: all .5s linear;
+}
+.hobby-image:hover img{
+    filter: brightness(75%);
+}
+.hobby-image:hover span.hobby-title{
+    filter: drop-shadow(2px 2px 5px black);
+    filter: brightness(100%);
+}

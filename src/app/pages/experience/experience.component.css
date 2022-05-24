@@ -1,0 +1,32 @@
+.complete-beginner, .complete-beginner-legend {
+    background-color:aquamarine !important;
+}
+.beginner, .beginner-legend {
+    background-color: green !important;
+}
+.couple-months, .couple-months-legend{
+    background-color: greenyellow !important;
+}
+.intermediate, .intermediate-legend{
+    background-color: yellow !important;
+}
+.regular, .regular-legend{
+    background-color: orange !important;
+}
+.hide {
+    display: none;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.show {
+    display: block;
+    opacity: 1;
+}
+mat-chip{
+    color: #000 !important;
+}
+.legend-nav{
+    text-align: center;
+    padding: 20px;
+}
+.legend-nav h3{margin: 0;}

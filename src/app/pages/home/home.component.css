@@ -1,0 +1,32 @@
+h1.home-title {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+}
+.home-main-card{
+    border-radius: 6px;
+    overflow: hidden;
+}
+.my-description{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+.about-me {
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    padding: 15px;
+    line-height: 2em;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.003em;
+    display: inline-block;
+}
+.main-card-image{
+    width: 30%;
+}
+.main-card-image img{
+    width: 100%;
+}

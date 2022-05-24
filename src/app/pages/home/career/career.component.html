@@ -1,0 +1,13 @@
+<mat-grid-list cols="1" rowHeight="150px">
+        <mat-grid-tile *ngFor="let careerStep of myCareer" rowspan="2">
+                <mat-card class="example-card">
+                        <mat-card-title  colspan="6">{{careerStep.companyName}}</mat-card-title>
+                        <mat-card-content>
+                                <p>{{careerStep.description}}</p>
+                        </mat-card-content>
+                        <mat-divider inset></mat-divider>
+                        <h3>{{careerStep.duration}}</h3>
+                        <h3>{{careerStep.appointment}}</h3>
+                </mat-card>
+        </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,17 @@
+<h1>My hobbies: </h1>
+<mat-grid-list cols="4" rowHeight="150px">
+    <mat-grid-tile 
+      *ngFor="let item of list; let index = index;"
+      [rowspan]="item.rows" 
+      [colspan]="item.cols" 
+      class="hobby-image"
+      style="background-color: royalblue;">
+      
+      <img 
+        class="hobby-image" 
+        [src]="item.data.image" 
+        [alt]="item.data.title + ' image'" 
+        style="object-fit: cover; width: 100%; height: 100%;">
+      <span class="hobby-title">{{item.data.title}}</span>
+    </mat-grid-tile>
+  </mat-grid-list>

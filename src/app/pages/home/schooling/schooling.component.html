@@ -1,0 +1,13 @@
+<mat-grid-list cols="1" rowHeight="150px">
+    <mat-grid-tile *ngFor="let schoolingStep of mySchooling" rowspan="2">
+            <mat-card class="example-card">
+                    <mat-card-title  colspan="6">{{schoolingStep.schoolName}}</mat-card-title>
+                    <mat-card-content>
+                            <p>{{schoolingStep.description}}</p>
+                    </mat-card-content>
+                    <mat-divider inset></mat-divider>
+                    <h3>{{schoolingStep.duration}}</h3>
+                    <h3>{{schoolingStep.developmentDegree}}</h3>
+            </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
