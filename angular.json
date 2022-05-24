@@ -10,7 +10,7 @@
           "strict": true
         }
       },
-      "root": "",
+      "root": "portfolio.github.io",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
