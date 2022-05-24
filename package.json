@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
+  "homepage": "https://neapol94.github.io/portfolio.github.io/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
