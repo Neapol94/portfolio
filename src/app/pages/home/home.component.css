@@ -3,10 +3,6 @@ h1.home-title {
     text-align: center;
     padding: 20px;
 }
-.home-main-card{
-    border-radius: 6px;
-    overflow: hidden;
-}
 .my-description{
     flex-direction: row;
     align-items: center;
@@ -29,4 +25,8 @@ h1.home-title {
 }
 .main-card-image img{
     width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 25px -10px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 25px -10px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 25px -10px rgba(66, 68, 90, 1);
 }
